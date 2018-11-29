@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>苏宁易购-注册</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/register.css" />
+</head>
+
+<body>
+    <section id="wrapper-header">
+        <section class="header content">
+            <a href="index.html"></a>
+            <b>欢迎注册</b>
+            <a href="login.html">我已经注册,马上登录></a>
+        </section>
+    </section>
+    <section id="wrapper-form">
+        <section class="register content">
+            <form autocomplete="off">
+                <div style="margin-bottom: 15px"><i class="libao"></i><a href="">注册领199元大礼包</a></div>
+                <div class="input-box clearfix">
+                    <label class="title">手机号码</label>
+                    <input type="text" name="tel" maxlength="11" />
+                    <label class="placeholder">请输入手机号</label>
+                    <i class="success"></i>
+                </div>
+                <p id="error" style="visibility: hidden;">该手机号已存在，您可以用此手机号直接<a href="" class="login">登录</a> </p>
+                <div class="input-box2 clearfix">
+                    <label class="title">手机验证码</label>
+                    <input type="text" maxlength="6" />
+                    <label class="placeholder">请输入手机验证码</label>
+                    <button type="button" onsubmit="false" class="btn1"">获取短信验证码</button>
+
+                </div>
+                <p class="
+                        send-ipone">手机验证码发送成功,8小时内有效</p>
+
+                        <div class="password">
+                            <label class="title">设置密码</label>
+                            <input type="password" maxlength="20" />
+                            <label class="placeholder">请输入密码</label>
+
+                        </div>
+                        <div style="height: 50px">
+                            <p class="tip" style="line-height: 26px">6-20个字符，由字母，数字和符号的两种以上组合。</p>
+                            <div class="setPsw_rank">
+                                <span>安全程度：</span>
+                                <span class="level1">低</span>
+                                <span class="level2">中</span>
+                                <span class="level3">高</span>
+                            </div>
+                        </div>
+
+                        <button class="send-register">提交注册</button>
+            </form>
+
+        </section>
+    </section>
+    <script src="js/ajax0.1.1.js"></script>
+    <script src="js/registor.js"></script>
+    <script>
+        registor.init();
+    </script>
+
+</body>
+
+</html>

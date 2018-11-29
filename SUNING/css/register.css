@@ -1,0 +1,284 @@
+#wrapper-header {
+    height: 91px;
+    border-top: 1px solid #b7b5b7;
+}
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#wrapper-header .header {
+    height: 88px;
+    border-bottom: 3px solid #ff9900;
+}
+
+#wrapper-header .header a:nth-child(1) {
+    display: block;
+    float: left;
+    width: 191px;
+    height: 88px;
+    background-image: url(../images/register/log-img_03.jpg);
+}
+
+#wrapper-header .header b:nth-child(2) {
+    display: block;
+    float: left;
+    margin-left: 24px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 88px;
+    font-weight: normal;
+}
+
+#wrapper-header .header a:nth-child(3) {
+    display: block;
+    color: #343231;
+    font-size: 12px;
+    margin-top: 53px;
+    float: right;
+}
+
+#wrapper-header .header a:nth-child(3):hover {
+    text-decoration: underline;
+}
+
+#wrapper-form {
+    height: 442px;
+}
+
+#wrapper-form .register {
+    height: 442px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-top: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#wrapper-form .register form {
+    width: 380px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register .send-register {
+    display: block;
+    width: 150px;
+    height: 25px;
+}
+
+#wrapper-form .register form .libao {
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    background-image: url(../images/register/libao.png);
+}
+
+#wrapper-form .register form a:nth-child(1) {
+    font-size: 14px;
+    color: #222221;
+    display: inline-block;
+}
+
+#wrapper-form .register form a:nth-child(1):hover {
+    text-decoration: underline;
+}
+
+#wrapper-form .register form .input-box {
+    width: 380px;
+    height: 40px;
+    position: relative;
+}
+
+#wrapper-form .register form .input-box .title {
+    width: 88px;
+    height: 40px;
+    font-size: 12px;
+    padding-left: 11px;
+    line-height: 36px;
+    box-sizing: border-box;
+    columns: #000;
+    border: 1px solid #cbcbcb;
+    float: left;
+    border-right: 0;
+}
+
+#wrapper-form .register form .input-box .success {
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    display: none;
+    background-image: url(../images/register/success.jpg);
+}
+
+#wrapper-form .register form .input-box input {
+    width: 292px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #cbcbcb;
+    border-left: 0;
+    float: left;
+}
+
+#wrapper-form .register form .input-box .placeholder {
+    position: absolute;
+    left: 88px;
+    line-height: 40px;
+    color: #cacaca;
+    cursor: text;
+}
+
+#wrapper-form .register form .input-box2 {
+    width: 380px;
+    height: 40px;
+    position: relative;
+}
+
+#wrapper-form .register form .input-box2 .title {
+    width: 88px;
+    height: 40px;
+    font-size: 12px;
+    padding-left: 11px;
+    line-height: 36px;
+    box-sizing: border-box;
+    columns: #000;
+    border: 1px solid #cbcbcb;
+    float: left;
+    border-right: 0;
+}
+
+#wrapper-form .register form .input-box2 input {
+    width: 142px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #cbcbcb;
+    border-left: 0;
+    border-right: 0;
+    float: left;
+}
+
+#wrapper-form .register form .input-box2 .placeholder {
+    position: absolute;
+    left: 88px;
+    line-height: 40px;
+    color: #cacaca;
+    cursor: text;
+}
+
+#wrapper-form .register form .input-box2 button {
+    width: 150px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #bbbbbb;
+    background-color: #f5f5f5;
+    outline: none;
+}
+
+#wrapper-form .register form .input-box2 button:hover {
+    color: red;
+}
+
+#wrapper-form .register form .password {
+    width: 380px;
+    height: 40px;
+    position: relative;
+}
+
+#wrapper-form .register form .password .title {
+    width: 88px;
+    height: 40px;
+    font-size: 12px;
+    padding-left: 11px;
+    line-height: 36px;
+    box-sizing: border-box;
+    columns: #000;
+    border: 1px solid #cbcbcb;
+    float: left;
+    border-right: 0;
+}
+
+#wrapper-form .register form .password input {
+    width: 292px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #cbcbcb;
+    border-left: 0;
+    float: left;
+}
+
+#wrapper-form .register form .password .placeholder {
+    position: absolute;
+    left: 88px;
+    line-height: 40px;
+    color: #cacaca;
+    cursor: text;
+}
+
+#wrapper-form .register form #error {
+    height: 34px;
+    line-height: 34px;
+    color: #999;
+}
+
+#wrapper-form .register form .send-ipone {
+    height: 34px;
+    line-height: 34px;
+    color: #999;
+}
+
+#wrapper-form .register .send-register {
+    width: 380px;
+    height: 40px;
+    background-color: #ff6600;
+    border: 0;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+
+}
+
+.setPsw_rank .level1 {
+    display: inline-block;
+    width: 50px;
+    height: 16px;
+    background-color: #cacaca;
+    text-align: center;
+    line-height: 16px;
+}
+
+.setPsw_rank .level2 {
+    display: inline-block;
+    width: 50px;
+    height: 16px;
+    background-color: #cacaca;
+    text-align: center;
+    line-height: 16px;
+}
+
+.setPsw_rank .level3 {
+    display: inline-block;
+    width: 50px;
+    height: 16px;
+    background-color: #cacaca;
+    text-align: center;
+    line-height: 16px;
+}
+
+.tip {
+    color: #999;
+}

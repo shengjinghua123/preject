@@ -1,0 +1,75 @@
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:active {
+	color: #353535;
+}
+
+/*h1,h2,h3,h4,h5,h6,b,strong{
+	font-size:100%;
+}*/
+i,
+em {
+	font-style: normal;
+}
+
+input {
+	outline: none;
+}
+
+html,
+body {
+	width: 100%;
+	font-size: 0.11rem;
+	color: #353535;
+	font-family: "微软雅黑";
+	background-color: #f9f9f9;
+}
+
+div,
+html,
+body,
+nav,
+section,
+footer,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+ul,
+li,
+table,
+b,
+span,
+i,
+form,
+a,
+span,
+fieldset,
+input {
+	margin: 0;
+	padding: 0;
+}
+
+img,
+fieldset {
+	border: 0;
+}
+
+.clearfix:after {
+	content: ' ';
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}

@@ -230,7 +230,7 @@
 
 #wrapper-form .register form #error {
     height: 34px;
-    line-height: 34px;
+    line-height: 30px;
     color: #999;
 }
 
@@ -249,7 +249,7 @@
     font-size: 18px;
     color: #fff;
     margin-top: 20px;
-
+    outline: none;
 }
 
 .setPsw_rank .level1 {
@@ -281,4 +281,34 @@
 
 .tip {
     color: #999;
+}
+
+.mask {
+    position: fixed;
+    width: 610px;
+    height: 430px;
+    top: 50%;
+    left: 50%;
+    margin-top: -215px;
+    margin-left: -305px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(221, 221, 221, 0.7);
+    background-color: #fff;
+}
+
+.mask button {
+    border: 0;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-align: center;
+    background: #f60;
+    font-size: 14px;
+    color: #fff;
+    margin: 6px auto 0;
+    outline: none;
+    margin-top: 350px;
+    margin-left: 235px;
 }

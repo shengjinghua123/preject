@@ -20,7 +20,7 @@
     </section>
     <section id="wrapper-form">
         <section class="register content">
-            <form autocomplete="off">
+            <form autocomplete="off" onsubmit="false">
                 <div style="margin-bottom: 15px"><i class="libao"></i><a href="">注册领199元大礼包</a></div>
                 <div class="input-box clearfix">
                     <label class="title">手机号码</label>
@@ -28,38 +28,44 @@
                     <label class="placeholder">请输入手机号</label>
                     <i class="success"></i>
                 </div>
-                <p id="error" style="visibility: hidden;">该手机号已存在，您可以用此手机号直接<a href="" class="login">登录</a> </p>
+                <div id="error" style="visibility: hidden; height: 34px">该手机号已存在，您可以用此手机号直接<a href="" class="login"
+                        style="font-size: 16px;color: red">登录</a></div>
+
                 <div class="input-box2 clearfix">
                     <label class="title">手机验证码</label>
                     <input type="text" maxlength="6" />
                     <label class="placeholder">请输入手机验证码</label>
-                    <button type="button" onsubmit="false" class="btn1"">获取短信验证码</button>
+                    <button type="button" onsubmit="false" class="btn1">获取短信验证码</button>
 
                 </div>
                 <p class="
-                        send-ipone">手机验证码发送成功,8小时内有效</p>
+                        send-ipone" style="visibility: hidden;">手机验证码发送成功,8小时内有效</p>
 
-                        <div class="password">
-                            <label class="title">设置密码</label>
-                            <input type="password" maxlength="20" />
-                            <label class="placeholder">请输入密码</label>
+                <div class="password">
+                    <label class="title">设置密码</label>
+                    <input type="password" maxlength="20" class="password" />
+                    <label class="placeholder">请输入密码</label>
 
-                        </div>
-                        <div style="height: 50px">
-                            <p class="tip" style="line-height: 26px">6-20个字符，由字母，数字和符号的两种以上组合。</p>
-                            <div class="setPsw_rank">
-                                <span>安全程度：</span>
-                                <span class="level1">低</span>
-                                <span class="level2">中</span>
-                                <span class="level3">高</span>
-                            </div>
-                        </div>
+                </div>
+                <div style="height: 50px">
+                    <p class="tip" style="line-height: 26px;visibility: hidden;">6-20个字符，由字母，数字和符号的两种以上组合。</p>
+                    <div class="setPsw_rank" style="visibility: hidden;">
+                        <span>安全程度：</span>
+                        <span class="level1">低</span>
+                        <span class="level2">中</span>
+                        <span class="level3">高</span>
+                    </div>
+                </div>
 
-                        <button class="send-register">提交注册</button>
+                <button class="send-register">提交注册</button>
             </form>
 
         </section>
     </section>
+    <div class="mask">
+        <p style="text-align: center;margin-top: 10px">hello!luck you!</p>
+        <button class="mask-btn">同意并继续</button>
+    </div>
     <script src="js/ajax0.1.1.js"></script>
     <script src="js/registor.js"></script>
     <script>

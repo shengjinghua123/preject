@@ -6,10 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
 </head>
 
 <body>
+    <header id="wrapper-header">
+        <header class="header content">
+            <div class="log">
+                <a href="index.1.html"></a>
+            </div>
+            <div class="header-right">
+                <p>为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</p>
+                <a href=""><i></i>我想对“登录”提意见</a>
+            </div>
+        </header>
+    </header>
+    <section id="wrapper-banner">
+        <section class="banner content">
+            <div class="login-form">
+                <div class="log-tab">
+                    <a href="javascript:void(0)" onclick="return false;" class="tab-on">
+                        <span>扫码登录</span>
+                        <i></i>
+                    </a>
+                    <a href="javascript:void(0)" onclick="return false;" class="tab">
+                        <span style="border: 0">账户登录</span>
+                        <i></i>
+                    </a>
+                </div>
+                <div class="left-box" style="display: block">
+                    <div class="box">
+                        <div class="qrcode"></div>
+                        <div class="phone"></div>
+                    </div>
+                    <p class="app">
+                        <i></i>
+                        打开<a href="$" onclick="return false;">苏宁易购APP</a>扫码登录
+                    </p>
+                </div>
+                <div class="right-box" style="display:none">
+                    <div class="error">
+                        <p class="one">
+                            <i></i><span>该账户名不存在，<a href="" style="color: #2272c8">忘记账户名</a>或<a href="register.html"
+                                    style="color: #2272c8">注册新账号?</a></span>
+                        </p>
+                        <p class="two">
+                            <i></i><span>您输入的账户名与密码不匹配，请重新输入！</span>
+                        </p>
+                        <p class="Third">
+                            <i></i><span>请输入用户名/邮箱/手机号！</span>
+                        </p>
+                        <p class="four">
+                            <i></i><span>请输入6-20位密码！</span>
+                        </p>
+                    </div>
+                    <form class="search-form" autocomplete="off" method="POST">
+                        <div class="user">
+                            <i class="username-i"></i> <input type="text" name="username" autocomplete="off"
+                                placeholder="用户名/手机/邮箱/门店会员卡号" /><i class="clear"></i>
+                        </div>
+                        <div class="word">
+                            <i class="password-i"></i><input type="password" name="password" autocomplete="off"
+                                placeholder="密码" /><i class="clear"></i>
+                        </div>
+                    </form>
+                    <div class="iar">点击按钮进行验证</div>
+                    <p class="login-switch"><a href=""><i class="login-phone"></i>短信验证码登录</a><a href="">忘了密码？</a></p>
+                    <button class="submit" type="submit">登录</button>
+                </div>
 
+                <a href="register.html" class="register">免费注册 有惊喜 ></a>
+                <div class="bind">
+                    <span class="title">
+                        使用以下账户登录
+                    </span>
+                    <div class="font">
+                        <a href=""><i></i>QQ</a>
+                        <a href=""><i></i>微信</a>
+                        <a href=""><i style="margin: 0"></i>易付宝</a>
+                        <a href=""><i></i>微博</a>
+                        <a href="">门店会员卡</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <script src="js/ajax0.1.1.js"></script>
+    <script src="js/move1.1.0.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        MOVE.init();
+    </script>
 </body>
 
 </html>

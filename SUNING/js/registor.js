@@ -12,7 +12,7 @@ var chickInput = {
         return reg.test(str)
     }
 }
-//开始以为逻辑挺简单的，后来越做越觉得自己把逻辑想得太简单了！所有就一直再补BUG~
+//开始以为逻辑挺简单的，后来越做越觉得自己把逻辑想得太简单了！所有就一直再补BUG~(主要是HTML结构没有写好)
 var registor = (function () {
     var $form = document.querySelector('.register form')
     console.log($form)
@@ -31,7 +31,7 @@ var registor = (function () {
             this.$span = this.$div.querySelectorAll('span');
             this.$mask = document.querySelector('.mask');
             this.$maskBtn = document.querySelector('.mask-btn');
-            this.event()
+            this.event();
         },
         event() {
             var _this = this;

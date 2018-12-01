@@ -1,0 +1,571 @@
+html,
+body {
+    background-color: #ffffff
+}
+
+#wrapper-header {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.content {
+    width: 1000px;
+    margin: auto;
+}
+
+#wrapper-header .header {
+    height: 100px;
+    background-color: #fff;
+}
+
+#wrapper-header .header .log {
+    width: 189px;
+    height: 100px;
+    float: left;
+    background-color: #fff;
+}
+
+#wrapper-header .header .log a {
+    display: block;
+    width: 189px;
+    height: 100px;
+    background-image: url(../images/log-1.png);
+    background-size: 189px 100px;
+    background-repeat: on repeat;
+}
+
+#wrapper-header .header .header-right {
+    width: 800px;
+    height: 63px;
+    margin-top: 37px;
+    float: right;
+}
+
+#wrapper-header .header .header-right p {
+    line-height: 26px;
+    background: #fefff1;
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #fecd66;
+    float: left;
+    padding: 0 4px;
+}
+
+#wrapper-header .header .header-right a {
+    display: block;
+    float: right;
+    font-size: 12px;
+    color: #333;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+#wrapper-header .header .header-right a:hover {
+    text-decoration: underline;
+}
+
+#wrapper-banner {
+    height: 570px;
+    background-image: url(../images/154356858167436424.png);
+    background-position: center;
+    background-repeat: on-repeat;
+}
+
+#wrapper-banner .banner {
+    height: 570px;
+    background-image: url(../images/154356858167436424.png);
+    background-position: center;
+}
+
+#wrapper-banner .banner .login-form {
+    width: 360px;
+    height: 410px;
+    float: right;
+    margin-top: 50px;
+    background-color: #fff;
+
+}
+
+#wrapper-banner .banner .login-form .log-tab {
+    width: 360px;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+#wrapper-banner .banner .login-form .log-tab a {
+    width: 180px;
+    height: 50px;
+    float: left;
+    position: relative;
+}
+
+#wrapper-banner .banner .login-form .log-tab a span {
+    display: block;
+    width: 180px;
+    height: 20px;
+    border-right: 1px solid #eee;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+#wrapper-banner .banner .login-form .log-tab a:hover span {
+    color: #f60;
+}
+
+#wrapper-banner .banner .login-form .log-tab a i {
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background: inherit;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -35px;
+}
+
+#wrapper-banner .banner .login-form .log-tab .tab-on span {
+    color: #f60;
+}
+
+#wrapper-banner .banner .login-form .log-tab .tab-on i {
+    background-color: #f60;
+}
+
+#wrapper-banner .banner .login-form .left-box .box {
+    width: 360px;
+    height: 200px;
+    margin-top: 30px;
+    position: relative;
+}
+
+#wrapper-banner .banner .login-form .left-box .box .qrcode {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 151px;
+    height: 151px;
+    background-image: url(../images/LoginUuidGenerate.png);
+    background-repeat: on-repeat;
+}
+
+#wrapper-banner .banner .login-form .left-box .box .phone {
+    width: 133px;
+    height: 200px;
+    position: absolute;
+    top: -20px;
+    right: 34px;
+    background-image: url(../images/scan.png);
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#wrapper-banner .banner .login-form .left-box .app {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+
+#wrapper-banner .banner .login-form .left-box .app a {
+    color: #f60;
+}
+
+#wrapper-banner .banner .login-form .left-box .app a:hover {
+    text-decoration: underline;
+}
+
+#wrapper-banner .banner .login-form .register {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#wrapper-banner .banner .login-form .register:hover {
+    text-decoration: underline;
+}
+
+#wrapper-banner .banner .login-form .bind {
+    width: 310px;
+    height: 53px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+#wrapper-banner .banner .login-form .bind .title {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    margin-left: -64px;
+    color: #999;
+    width: 128px;
+    background: #fff;
+    text-align: center;
+}
+
+#wrapper-banner .banner .login-form .bind .font {
+    width: 310px;
+    height: 16px;
+    margin-top: 18px;
+    display: flex;
+}
+
+#wrapper-banner .banner .login-form .bind .font a {
+    font-size: 12px;
+    color: #333;
+    flex: 1;
+    height: 16px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper-banner .banner .login-form .bind .font a i {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/weixing.png);
+    background-size: 16px 16px;
+    margin-right: 6px;
+}
+
+#wrapper-banner .banner .login-form .bind .font a:last-child {
+    width: 67px;
+    padding-left: 6px;
+    border: 0;
+}
+
+#wrapper-banner .banner .login-form .bind .font a:hover {
+    color: #f60;
+    text-decoration: #f60;
+}
+
+#wrapper-banner .banner .login-form .bind .font a:nth-child(3) i {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+#wrapper-banner .banner .login-form .bind .font a:nth-child(1) i {
+    background-image: url(../images/qq.png);
+}
+
+#wrapper-banner .banner .login-form .bind .font a:nth-child(3) i {
+    background-image: url(../images/yifubao.png);
+}
+
+#wrapper-banner .banner .login-form .bind .font a:nth-child(4) i {
+    background-image: url(../images/weibo.png);
+}
+
+#wrapper-banner .banner .login-form .right-box {
+    width: 360px;
+    height: 216px;
+    margin-top: 20px;
+}
+
+#wrapper-banner .banner .login-form .right-box .error {
+    width: 310px;
+    height: 24px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #332222;
+    background: #fff0f0;
+    border: 1px solid #ff3c3c;
+    line-height: 24px;
+    padding-left: 10px;
+    margin-left: 20px;
+    position: relative;
+    visibility: hidden;
+}
+
+#wrapper-banner .banner .login-form .right-box .error .one {
+    width: 310px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #332222;
+    line-height: 24px;
+    padding-left: 32px;
+    display: none;
+}
+
+#wrapper-banner .banner .login-form .right-box .error .one i {
+    position: absolute;
+    left: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url(../images/error_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wrapper-banner .banner .login-form .right-box .error .two {
+    width: 310px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #332222;
+    padding-left: 32px;
+    line-height: 24px;
+    display: none;
+}
+
+#wrapper-banner .banner .login-form .right-box .error .two i {
+    position: absolute;
+    left: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url(../images/error_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wrapper-banner .banner .login-form .right-box .error .Third {
+    width: 310px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #332222;
+    line-height: 24px;
+    padding-left: 32px;
+    display: none;
+}
+
+#wrapper-banner .banner .login-form .right-box .error .Third i {
+    position: absolute;
+    left: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url(../images/error_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wrapper-banner .banner .login-form .right-box .error .four {
+    width: 310px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #332222;
+    line-height: 24px;
+    padding-left: 32px;
+    display: none;
+}
+
+#wrapper-banner .banner .login-form .right-box .error .four i {
+    position: absolute;
+    left: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url(../images/error_2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form {
+    width: 310px;
+    height: 96px;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .user {
+    width: 310px;
+    height: 38px;
+    position: relative;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .word {
+    width: 310px;
+    height: 38px;
+    position: relative;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .user input {
+    width: 310px;
+    height: 38px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 0 36px;
+    font-size: 15px;
+    color: #333;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .user input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .user .username-i {
+    width: 36px;
+    height: 38px;
+    display: block;
+    background-image: url(../images/user.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .user .clear {
+    width: 36px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    background-image: url(../images/clear.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    top: 0;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .word input {
+    width: 310px;
+    height: 38px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 0 36px;
+    font-size: 15px;
+    color: #333;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .word input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .word .password-i {
+    width: 36px;
+    height: 38px;
+    display: block;
+    background-image: url(../images/password.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#wrapper-banner .banner .login-form .right-box .search-form .word .clear {
+    width: 36px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    background-image: url(../images/clear.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    top: 0;
+}
+
+#wrapper-banner .banner .login-form .right-box .iar {
+    width: 310px;
+    height: 40px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    color: #6060d7;
+    background: #f9f9f9;
+    border-radius: 2px;
+    border: 1px solid #c6d4f7;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    margin-top: 20px;
+    display: none;
+}
+
+#wrapper-banner .banner .login-form .right-box .login-switch {
+    width: 310px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#wrapper-banner .banner .login-form .right-box .login-switch a:nth-child(1) {
+    display: block;
+    width: 102px;
+    height: 35px;
+    float: left;
+    font-size: 12px;
+    color: #333;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#wrapper-banner .banner .login-form .right-box .login-switch a:nth-child(2) {
+    display: block;
+    width: 60px;
+    height: 35px;
+    float: right;
+    font-size: 12px;
+    color: #333;
+    line-height: 35px;
+}
+
+#wrapper-banner .banner .login-form .right-box .login-switch a:nth-child(1) i {
+    width: 13px;
+    height: 18px;
+    background-image: url(../images/tel.png);
+    background-size: 100%;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+#wrapper-banner .banner .login-form .right-box .login-switch a:nth-child(1):hover {
+    text-decoration: underline;
+}
+
+#wrapper-banner .banner .login-form .right-box .login-switch a:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+#wrapper-banner .banner .login-form .right-box .submit {
+    width: 310px;
+    line-height: 40px;
+    margin: 0 auto;
+    background: #f60;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 20px;
+    color: #fff;
+    border: 0;
+    outline: none;
+}

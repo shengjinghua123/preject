@@ -66,6 +66,7 @@ var registor = (function () {
                                     method: 'POST',
                                     data: this.value
                                 }).then(res => {
+                                    console.log(res)
                                     if (res == 1) {
                                         _this.$success.style.display = 'none';
                                         _this.$p.style.visibility = 'visible';
@@ -170,9 +171,17 @@ var registor = (function () {
                     if (_this.$inp1[0].value == '') {
                         _this.$p.innerHTML = '请输入注册手机！';
                     } else if (_this.$success.style.display == 'none' && _this.$p.innerHTML != '') {
-                        _this.$p.innerHTML = '请输入正确的手机号！'
+                        _this.$p.innerHTML = '请输入正确的手机号！';
                     } else {
-                        _this.$p.innerHTML = `该手机号已存在，您可以用此手机号直接<a href="login.html" class="login" style="font-size: 14px;color: red">登录</a>`;
+                        var bool = chickInput['tel'](_this.$inp1[0].value);
+                        if (bool === false) {
+                            _this.$p.style.visibility = 'visible';
+                            _this.$p.innerHTML = '请输入正确的手机号！';
+                            _this.$success.style.display = 'none';
+                        } else {
+                            _this.$p.innerHTML = `该手机号已存在，您可以用此手机号直接<a href="login.html" class="login" style="font-size: 14px;color: red">登录</a>`;
+                        }
+
                     }
                     _this.$p.style.color = 'red';
                     _this.$inp1[0].addEventListener('focus', function () {
@@ -225,23 +234,31 @@ var registor = (function () {
                 _this.$tip.innerHTML = `6-20个字符，由字母，数字和符号的两种以上组合。`;
                 _this.$tip.style.color = '#999';
             }
-            this.$inp1[0].oninput = function () {
+            this.$inp1[0].oninput = function (e) {
                 if (this.value.length == 11) {
-                    sendAjax('PHP/a.php', {
-                        method: 'POST',
-                        data: this.value
-                    }).then(res => {
-                        if (res == 1) {
-                            _this.$success.style.display = 'none';
-                            _this.$p.style.visibility = 'visible';
-                            _this.$p.innerHTML = `该手机号已存在，您可以用此手机号直接<a href="login.html" class="login" style="font-size: 14px;color: red">登录</a>`;
-                            e.preventDefault();
-                        } else if (res == 0) {
-                            _this.$success.style.display = 'block';
-                            _this.$p.style.visibility = 'hidden';
-                            _this.$p.innerHTML = '';
-                        }
-                    })
+                    var bool = chickInput['tel'](this.value);
+                    if (bool === false) {
+                        _this.$p.style.visibility = 'visible';
+                        _this.$p.innerHTML = '请输入正确的手机号！';
+                        _this.$success.style.display = 'none';
+                    } else {
+                        sendAjax('PHP/a.php', {
+                            method: 'POST',
+                            data: this.value
+                        }).then(res => {
+                            if (res == 1) {
+                                _this.$success.style.display = 'none';
+                                _this.$p.style.visibility = 'visible';
+                                _this.$p.innerHTML = `该手机号已存在，您可以用此手机号直接<a href="login.html" class="login" style="font-size: 14px;color: red">登录</a>`;
+                                e.preventDefault();
+                            } else if (res == 0) {
+                                _this.$success.style.display = 'block';
+                                _this.$p.style.visibility = 'hidden';
+                                _this.$p.innerHTML = '';
+                            }
+                        })
+                    }
+
                 } else {
                     _this.$success.style.display = 'none';
                 }
